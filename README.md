@@ -7,8 +7,11 @@ menu](s1kd-tools/docs/ICN-S1KDNPP-A-000000-A-KHZAE-00001-A-001-01.PNG)
 General
 -------
 
-These are a set of scripts for the PythonScript plugin which provide an
-interface for using the s1kd-tools within Notepad++.
+These are a set of scripts for the
+[PythonScript](http://npppythonscript.sourceforge.net) plugin which
+provide an interface for using the
+[s1kd-tools](https://github.com/kibook/s1kd-tools) within
+[Notepad++](https://notepad-plus-plus.org).
 
 Install
 -------
