@@ -24,10 +24,10 @@ def main():
 	(out, err) = p.communicate(Npp.editor.getText())
 	e = p.wait()
 
-	if e == 0:
-		Npp.editor.setText(out)
-	else:
-		Npp.notepad.messageBox(err)
+        if e != 0:
+            Npp.notepad.messageBox(err)
+
+        Npp.editor.setText(out)
 
         os.chdir(cwd)
 	
