@@ -20,6 +20,9 @@ def main():
 	Npp.notepad.close()
 	Npp.notepad.activateBufferID(buf)
 
+        cwd = os.getcwd()
+        os.chdir(os.path.dirname(path))
+
 	args = [s1kd_brexcheck, "-b", path, "-c", "-l", "-v"]
 
 	p = subprocess.Popen(
@@ -38,5 +41,7 @@ def main():
 	else:
 		Npp.notepad.new()
 		Npp.editor.setText(err)
+
+        os.chdir(cwd)
 		
 main()

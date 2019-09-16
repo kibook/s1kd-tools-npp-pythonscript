@@ -8,6 +8,10 @@ def main():
 
 	CREATE_NO_WINDOW=0x08000000
 
+        filedir = os.path.dirname(Npp.notepad.getCurrentFilename())
+        cwd = os.getcwd()
+        os.chdir(filedir)
+
 	args = [s1kd_brexcheck, "-c", "-l", "-v"]
 
 	p = subprocess.Popen(
@@ -26,5 +30,7 @@ def main():
 	else:
 		Npp.notepad.new()
 		Npp.editor.setText(err)
+
+        os.chdir(cwd)
 		
 main()

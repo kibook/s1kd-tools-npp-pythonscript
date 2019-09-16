@@ -8,6 +8,9 @@ def main():
 
 	CREATE_NO_WINDOW=0x08000000
 
+        cwd = os.getcwd()
+        os.chdir(os.path.dirname(Npp.notepad.getCurrentFilename()))
+
 	args = [s1kd_refs, "-U"]
 
 	p = subprocess.Popen(
@@ -25,5 +28,7 @@ def main():
 		Npp.editor.setText(out)
 	else:
 		Npp.notepad.messageBox(err)
+
+        os.chdir(cwd)
 	
 main()
