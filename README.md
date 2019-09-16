@@ -50,11 +50,8 @@ Check the CSDB object against the appropriate S1000D Default BREX.
 BREX &gt; Check against referenced BREX  
 Check the CSDB object against the BREX data module it references.
 
-New &gt; New DM  
-Create a new data module.
-
-New &gt; New PM  
-Create a new publication module.
+New &gt; \*  
+Create new CSDB objects.
 
 References &gt; Insert reference  
 Insert a reference to a selected CSDB object.

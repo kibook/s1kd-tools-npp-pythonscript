@@ -9,7 +9,7 @@
       <dmIdent>
         <dmCode modelIdentCode="S1KDNPP" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
         <language languageIsoCode="en" countryIsoCode="CA"/>
-        <issueInfo issueNumber="000" inWork="04"/>
+        <issueInfo issueNumber="000" inWork="05"/>
       </dmIdent>
       <dmAddressItems>
         <issueDate year="2019" month="09" day="16"/>
@@ -153,15 +153,9 @@
               </listItemDefinition>
             </definitionListItem>
             <definitionListItem>
-              <listItemTerm>New &gt; New DM</listItemTerm>
+              <listItemTerm>New &gt; *</listItemTerm>
               <listItemDefinition>
-                <para>Create a new data module.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>New &gt; New PM</listItemTerm>
-              <listItemDefinition>
-                <para>Create a new publication module.</para>
+                <para>Create new CSDB objects.</para>
               </listItemDefinition>
             </definitionListItem>
             <definitionListItem>
