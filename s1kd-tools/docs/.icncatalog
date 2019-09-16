@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<icnCatalog>
+  <media name="github">
+    <icn type="pattern" infoEntityIdent="(.*)" uri="s1kd-tools/docs/\1.PNG" notation="PNG"/>
+  </media>
+</icnCatalog>
