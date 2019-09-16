@@ -17,62 +17,94 @@ Install
 -------
 
 Copy the `s1kd-tools` directory to the PythonScript user scripts folder,
-`%APPDATA%\Notepad++\plugins\config\PythonScript\scripts`.
+typically `%APPDATA%\Notepad++\plugins\config\PythonScript\scripts`.
 
 Functions
 ---------
 
-Acronyms &gt; List acronyms  
-Generate a list of acronyms in the data module.
+-   **Acronyms**
 
-Acronyms &gt; Markup acronyms from file  
-Markup acronyms using the specified acronym definitions file.
+    -   **List acronyms**
 
-Acronyms &gt; Markup acronyms  
-Markup acronyms using the .acronyms file.
+        Generate a list of acronyms in the data module.
 
-Acronyms &gt; Remove acronym markup  
-Convert acronym markup back to plain text.
+    -   **Markup acronyms from file**
 
-Applicability &gt; Filter  
-Filter the CSDB object for a certain applicability.
+        Markup acronyms using the specified acronym definitions file.
 
-Applicability &gt; Generate display text  
-Generate the display text for applicability annotations in the CSDB
-object.
+    -   **Markup acronyms**
 
-BREX &gt; Check against BREX DM  
-Check the CSDB object against a selected BREX data module.
+        Markup acronyms using the .acronyms file.
 
-BREX &gt; Check against default BREX  
-Check the CSDB object against the appropriate S1000D Default BREX.
+    -   **Remove acronym markup**
 
-BREX &gt; Check against referenced BREX  
-Check the CSDB object against the BREX data module it references.
+        Convert acronym markup back to plain text.
 
-New &gt; \*  
-Create new CSDB objects.
+-   **Applicability**
 
-References &gt; Insert reference  
-Insert a reference to a selected CSDB object.
+    -   **Applicability filtering**
 
-References &gt; Synchronize references  
-Generate the References table for a data module.
+        Filter the CSDB object for a given set of conditions.
 
-References &gt; Text-to-reference  
-Generate the XML for a reference from the currently selected text.
+    -   **Generate display text**
 
-References &gt; Update references  
-Update the titles of referenced CSDB objects.
+        Generate the display text for applicability annotations in the
+        CSDB object.
 
-Transform &gt; Add neutral metadata  
-Add IETP neutral metadata to the CSDB object.
+-   **BREX**
 
-Transform &gt; Apply XSL transformation  
-Apply an XSL transform script to the CSDB object.
+    -   **Check against BREX DM**
 
-Add ICN  
-Add the NOTATION and ENTITY declarations for an ICN to the CSDB object.
+        Check the CSDB object against a selected BREX data module.
 
-Validate  
-Validate the CSDB object against its schema.
+    -   **Check against default BREX**
+
+        Check the CSDB object against the appropriate S1000D Default
+        BREX.
+
+    -   **Check against referenced BREX**
+
+        Check the CSDB object against the BREX data module it
+        references.
+
+-   **New**
+
+    Create new types of CSDB objects.
+
+-   **References**
+
+    -   **Insert reference**
+
+        Insert a reference to a selected CSDB object.
+
+    -   **Synchronize references**
+
+        Generate the References table for a data module.
+
+    -   **Text-to-reference**
+
+        Generate the XML for references from the currently selected
+        text.
+
+    -   **Update references**
+
+        Update the titles of referenced CSDB objects.
+
+-   **Transform**
+
+    -   **Add neutral metadata**
+
+        Add IETP neutral metadata to the CSDB object.
+
+    -   **Apply XSL transformation**
+
+        Apply an XSL transform script to the CSDB object.
+
+-   **Add ICN**
+
+    Add the NOTATION and ENTITY declarations for an ICN to the CSDB
+    object.
+
+-   **Validate**
+
+    Validate the CSDB object against its schema.

@@ -9,7 +9,7 @@
       <dmIdent>
         <dmCode modelIdentCode="S1KDNPP" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
         <language languageIsoCode="en" countryIsoCode="CA"/>
-        <issueInfo issueNumber="000" inWork="05"/>
+        <issueInfo issueNumber="000" inWork="06"/>
       </dmIdent>
       <dmAddressItems>
         <issueDate year="2019" month="09" day="16"/>
@@ -92,121 +92,166 @@
       </levelledPara>
       <levelledPara>
         <title>Install</title>
-        <para>Copy the <verbatimText verbatimStyle="vs02">s1kd-tools</verbatimText> directory to the PythonScript user scripts folder, <verbatimText verbatimStyle="vs02">%APPDATA%\Notepad++\plugins\config\PythonScript\scripts</verbatimText>.</para>
+        <para>Copy the <verbatimText verbatimStyle="vs02">s1kd-tools</verbatimText> directory to the PythonScript user scripts folder, typically <verbatimText verbatimStyle="vs02">%APPDATA%\Notepad++\plugins\config\PythonScript\scripts</verbatimText>.</para>
       </levelledPara>
       <levelledPara>
         <title>Functions</title>
         <para>
-          <definitionList>
-            <definitionListItem>
-              <listItemTerm>Acronyms &gt; List acronyms</listItemTerm>
-              <listItemDefinition>
-                <para>Generate a list of acronyms in the data module.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>Acronyms &gt; Markup acronyms from file</listItemTerm>
-              <listItemDefinition>
-                <para>Markup acronyms using the specified acronym definitions file.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>Acronyms &gt; Markup acronyms</listItemTerm>
-              <listItemDefinition>
-                <para>Markup acronyms using the .acronyms file.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>Acronyms &gt; Remove acronym markup</listItemTerm>
-              <listItemDefinition>
-                <para>Convert acronym markup back to plain text.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>Applicability &gt; Filter</listItemTerm>
-              <listItemDefinition>
-                <para>Filter the CSDB object for a certain applicability.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>Applicability &gt; Generate display text</listItemTerm>
-              <listItemDefinition>
-                <para>Generate the display text for applicability annotations in the CSDB object.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>BREX &gt; Check against BREX DM</listItemTerm>
-              <listItemDefinition>
-                <para>Check the CSDB object against a selected BREX data module.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>BREX &gt; Check against default BREX</listItemTerm>
-              <listItemDefinition>
-                <para>Check the CSDB object against the appropriate S1000D Default BREX.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>BREX &gt; Check against referenced BREX</listItemTerm>
-              <listItemDefinition>
-                <para>Check the CSDB object against the BREX data module it references.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>New &gt; *</listItemTerm>
-              <listItemDefinition>
-                <para>Create new CSDB objects.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>References &gt; Insert reference</listItemTerm>
-              <listItemDefinition>
-                <para>Insert a reference to a selected CSDB object.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>References &gt; Synchronize references</listItemTerm>
-              <listItemDefinition>
-                <para>Generate the References table for a data module.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>References &gt; Text-to-reference</listItemTerm>
-              <listItemDefinition>
-                <para>Generate the XML for a reference from the currently selected text.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>References &gt; Update references</listItemTerm>
-              <listItemDefinition>
-                <para>Update the titles of referenced CSDB objects.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>Transform &gt; Add neutral metadata</listItemTerm>
-              <listItemDefinition>
-                <para>Add IETP neutral metadata to the CSDB object.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>Transform &gt; Apply XSL transformation</listItemTerm>
-              <listItemDefinition>
-                <para>Apply an XSL transform script to the CSDB object.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>Add ICN</listItemTerm>
-              <listItemDefinition>
-                <para>Add the NOTATION and ENTITY declarations for an ICN to the CSDB object.</para>
-              </listItemDefinition>
-            </definitionListItem>
-            <definitionListItem>
-              <listItemTerm>Validate</listItemTerm>
-              <listItemDefinition>
-                <para>Validate the CSDB object against its schema.</para>
-              </listItemDefinition>
-            </definitionListItem>
-          </definitionList>
+          <randomList>
+            <listItem>
+              <para>
+                <emphasis>Acronyms</emphasis>
+              </para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para>
+                      <emphasis>List acronyms</emphasis>
+                    </para>
+                    <para>Generate a list of acronyms in the data module.</para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <emphasis>Markup acronyms from file</emphasis>
+                    </para>
+                    <para>Markup acronyms using the specified acronym definitions file.</para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <emphasis>Markup acronyms</emphasis>
+                    </para>
+                    <para>Markup acronyms using the .acronyms file.</para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <emphasis>Remove acronym markup</emphasis>
+                    </para>
+                    <para>Convert acronym markup back to plain text.</para>
+                  </listItem>
+                </randomList>
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                <emphasis>Applicability</emphasis>
+              </para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para>
+                      <emphasis>Applicability filtering</emphasis>
+                    </para>
+                    <para>Filter the CSDB object for a given set of conditions.</para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <emphasis>Generate display text</emphasis>
+                    </para>
+                    <para>Generate the display text for applicability annotations in the CSDB object.</para>
+                  </listItem>
+                </randomList>
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                <emphasis>BREX</emphasis>
+              </para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para>
+                      <emphasis>Check against BREX DM</emphasis>
+                    </para>
+                    <para>Check the CSDB object against a selected BREX data module.</para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <emphasis>Check against default BREX</emphasis>
+                    </para>
+                    <para>Check the CSDB object against the appropriate S1000D Default BREX.</para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <emphasis>Check against referenced BREX</emphasis>
+                    </para>
+                    <para>Check the CSDB object against the BREX data module it references.</para>
+                  </listItem>
+                </randomList>
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                <emphasis>New</emphasis>
+              </para>
+              <para>Create new types of CSDB objects.</para>
+            </listItem>
+            <listItem>
+              <para>
+                <emphasis>References</emphasis>
+              </para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para>
+                      <emphasis>Insert reference</emphasis>
+                    </para>
+                    <para>Insert a reference to a selected CSDB object.</para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <emphasis>Synchronize references</emphasis>
+                    </para>
+                    <para>Generate the References table for a data module.</para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <emphasis>Text-to-reference</emphasis>
+                    </para>
+                    <para>Generate the XML for references from the currently selected text.</para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <emphasis>Update references</emphasis>
+                    </para>
+                    <para>Update the titles of referenced CSDB objects.</para>
+                  </listItem>
+                </randomList>
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                <emphasis>Transform</emphasis>
+              </para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para>
+                      <emphasis>Add neutral metadata</emphasis>
+                    </para>
+                    <para>Add IETP neutral metadata to the CSDB object.</para>
+                  </listItem>
+                  <listItem>
+                    <para>
+                      <emphasis>Apply XSL transformation</emphasis>
+                    </para>
+                    <para>Apply an XSL transform script to the CSDB object.</para>
+                  </listItem>
+                </randomList>
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                <emphasis>Add ICN</emphasis>
+              </para>
+              <para>Add the NOTATION and ENTITY declarations for an ICN to the CSDB object.</para>
+            </listItem>
+            <listItem>
+              <para>
+                <emphasis>Validate</emphasis>
+              </para>
+              <para>Validate the CSDB object against its schema.</para>
+            </listItem>
+          </randomList>
         </para>
       </levelledPara>
     </description>
