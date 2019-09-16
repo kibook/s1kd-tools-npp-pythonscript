@@ -9,12 +9,16 @@ def main():
 
 	CREATE_NO_WINDOW=0x08000000
 
-	filter = Npp.notepad.prompt("Filter:", "Filter", "")
+        filters = Npp.notepad.prompt("Enter a comma-separated list of assignments, in the form of <ident>:<type>=<value>. For example: version:prodattr=A,weather:condition=icy", "Applicability filtering", "")
 
-	if filter == None:
+	if filters == None:
 		return
 
-	args = [s1kd_instance, "-s", filter]
+	args = [s1kd_instance, "-y"]
+
+        for f in filters.split(","):
+            args.append("-s")
+            args.append(f)
 
 	p = subprocess.Popen(
 		args,
