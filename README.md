@@ -25,6 +25,9 @@ Functions
 Acronyms &gt; List acronyms  
 Generate a list of acronyms in the data module.
 
+Acronyms &gt; Markup acronyms from file  
+Markup acronyms using the specified acronym definitions file.
+
 Acronyms &gt; Markup acronyms  
 Markup acronyms using the .acronyms file.
 
