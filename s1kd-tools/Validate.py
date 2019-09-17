@@ -16,6 +16,7 @@ def main():
 		stdin=subprocess.PIPE,
 		stdout=subprocess.PIPE,
 		stderr=subprocess.PIPE,
+                env={"XML_CATALOG_FILES": os.environ["XML_CATALOG_FILES"]},
 		creationflags=CREATE_NO_WINDOW)
 		
 	(out, err) = p.communicate(Npp.editor.getText())
