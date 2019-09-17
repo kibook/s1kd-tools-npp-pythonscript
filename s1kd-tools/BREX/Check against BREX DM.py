@@ -1,6 +1,7 @@
 import subprocess
 import os
 import Npp
+import ConfigParser
 
 def main():
 	scriptdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +24,16 @@ def main():
         cwd = os.getcwd()
         os.chdir(os.path.dirname(path))
 
-	args = [s1kd_brexcheck, "-b", path, "-c", "-l", "-v"]
+	args = [s1kd_brexcheck, "-b", path, "-v"]
+
+        config = ConfigParser.RawConfigParser()
+        config.read(scriptdir + "\\settings.ini")
+
+        if config.get("BREX", "CheckValues") == "yes":
+            args.append("-c")
+
+        if config.get("BREX", "Layered") == "yes":
+            args.append("-l")
 
 	p = subprocess.Popen(
 		args,

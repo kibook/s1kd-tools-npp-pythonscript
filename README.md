@@ -94,6 +94,13 @@ Functions
         Check the CSDB object against the BREX data module it
         references.
 
+-   **ICN**
+
+    -   **Add ICN**
+
+        Add the NOTATION and ENTITY declarations for an ICN to the CSDB
+        object.
+
 -   **New**
 
     Create new types of CSDB objects.
@@ -127,11 +134,8 @@ Functions
 
         Apply an XSL transform script to the CSDB object.
 
--   **Add ICN**
-
-    Add the NOTATION and ENTITY declarations for an ICN to the CSDB
-    object.
-
 -   **Validate**
 
-    Validate the CSDB object against its schema.
+    -   **Check against schema**
+
+        Validate the CSDB object against its schema.

@@ -10,9 +10,7 @@ def main():
         cwd = os.getcwd()
         os.chdir(scriptdir + "\\bin")
 
-        args = [
-                "s1kd-appcheck.exe",
-                "-v"]
+        args = ["s1kd-appcheck.exe", "-v"]
 
 	p = subprocess.Popen(
 		args,

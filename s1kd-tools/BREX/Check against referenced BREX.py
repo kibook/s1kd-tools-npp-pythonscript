@@ -12,7 +12,16 @@ def main():
         cwd = os.getcwd()
         os.chdir(filedir)
 
-	args = [s1kd_brexcheck, "-c", "-l", "-v"]
+	args = [s1kd_brexcheck, "-v"]
+
+        config = ConfigParser.RawConfigParser()
+        config.read(scriptdir + "\\settings.ini")
+
+        if config.get("BREX", "CheckValues") == "yes":
+            args.append("-c")
+
+        if config.get("BREX", "Layered") == "yes":
+            args.append("-l")
 
 	p = subprocess.Popen(
 		args,

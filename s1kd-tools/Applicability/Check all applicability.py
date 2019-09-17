@@ -11,8 +11,7 @@ def main():
         cwd = os.getcwd()
         os.chdir(scriptdir + "\\bin")
 
-        args = [
-                "s1kd-appcheck.exe",
+        args = ["s1kd-appcheck.exe",
                 "-d", filedir,
                 "-a",
                 "-v"]

@@ -9,7 +9,7 @@
       <dmIdent>
         <dmCode modelIdentCode="S1KDNPP" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
         <language languageIsoCode="en" countryIsoCode="CA"/>
-        <issueInfo issueNumber="000" inWork="07"/>
+        <issueInfo issueNumber="000" inWork="08"/>
       </dmIdent>
       <dmAddressItems>
         <issueDate year="2019" month="09" day="17"/>
@@ -211,6 +211,21 @@
             </listItem>
             <listItem>
               <para>
+                <emphasis>ICN</emphasis>
+              </para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para>
+                      <emphasis>Add ICN</emphasis>
+                    </para>
+                    <para>Add the NOTATION and ENTITY declarations for an ICN to the CSDB object.</para>
+                  </listItem>
+                </randomList>
+              </para>
+            </listItem>
+            <listItem>
+              <para>
                 <emphasis>New</emphasis>
               </para>
               <para>Create new types of CSDB objects.</para>
@@ -271,15 +286,18 @@
             </listItem>
             <listItem>
               <para>
-                <emphasis>Add ICN</emphasis>
-              </para>
-              <para>Add the NOTATION and ENTITY declarations for an ICN to the CSDB object.</para>
-            </listItem>
-            <listItem>
-              <para>
                 <emphasis>Validate</emphasis>
               </para>
-              <para>Validate the CSDB object against its schema.</para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para>
+                      <emphasis>Check against schema</emphasis>
+                    </para>
+                    <para>Validate the CSDB object against its schema.</para>
+                  </listItem>
+                </randomList>
+              </para>
             </listItem>
           </randomList>
         </para>

@@ -2,6 +2,7 @@ import os
 import subprocess
 import Npp
 import sys
+import ConfigParser
 
 def main():
 	scriptdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -15,6 +16,18 @@ def main():
 		return
 
 	args = [s1kd_instance, "-y"]
+
+        config = ConfigParser.RawConfigParser()
+        config.read(scriptdir + "\\settings.ini")
+
+        reduceOrSimplify = config.get("Filtering", "ReduceOrSimplify")
+        if reduceOrSimplify == "reduce":
+            args.append("-a")
+        elif reduceOrSimplify == "simplify":
+            args.append("-A")
+
+        if config.get("Filtering", "AddRequired") == "yes":
+            args.append("-Z")
 
         for f in filters.split(","):
             args.append("-s")

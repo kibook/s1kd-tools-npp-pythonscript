@@ -3,7 +3,7 @@ import subprocess
 import Npp
 
 def main():
-	scriptdir = os.path.dirname(os.path.abspath(__file__))
+	scriptdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 	s1kd_validate = scriptdir + "\\bin\\s1kd-validate.exe"
 
 	CREATE_NO_WINDOW=0x08000000
