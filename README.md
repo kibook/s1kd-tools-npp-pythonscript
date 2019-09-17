@@ -46,6 +46,33 @@ Functions
 
         Filter the CSDB object for a given set of conditions.
 
+    -   **Check all applicability**
+
+        Check the applicability of the CSDB object using all product
+        attribute and condition values, as defined in the ACT and CCT.
+
+    -   **Check applicability properties**
+
+        Check that the product attributes, conditions, and values used
+        for each are defined in the ACT and CCT.
+
+    -   **Check nested applicability**
+
+        Check that all product attribute and condition values used in
+        nested applicability annotations are subsets of the values used
+        in their parents.
+
+    -   **Check product applicability**
+
+        Check that the CSDB object is valid for all product instances
+        defined in the PCT.
+
+    -   **Check standalone applicability**
+
+        Check the applicability of the CSDB object using only the
+        product attribute and condition values explicitly used within
+        the object.
+
     -   **Generate display text**
 
         Generate the display text for applicability annotations in the
