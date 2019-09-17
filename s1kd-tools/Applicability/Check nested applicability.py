@@ -4,7 +4,6 @@ import Npp
 
 def main():
 	scriptdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        filedir = os.path.dirname(Npp.notepad.getCurrentFilename())
 
 	CREATE_NO_WINDOW=0x08000000
 
@@ -13,7 +12,7 @@ def main():
 
         args = [
                 "s1kd-appcheck.exe",
-                "-d", filedir,
+                "-c",
                 "-n",
                 "-v"]
 
