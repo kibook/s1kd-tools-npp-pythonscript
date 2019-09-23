@@ -134,6 +134,10 @@ Functions
 
         Apply an XSL transform script to the CSDB object.
 
+    -   **Remove neutral metadata**
+
+        Remove IETP neutral metadata from the CSDB object.
+
 -   **Validate**
 
     -   **Check against schema**
