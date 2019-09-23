@@ -9,7 +9,11 @@ def main():
 	CREATE_NO_WINDOW=0x08000000
 
         cwd = os.getcwd()
-        os.chdir(os.path.dirname(Npp.notepad.getCurrentFilename()))
+
+	try:
+		os.chdir(os.path.dirname(Npp.notepad.getCurrentFilename()))
+	except:
+		pass
 
 	args = [s1kd_refs, "-U"]
 

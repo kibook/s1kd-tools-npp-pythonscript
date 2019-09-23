@@ -22,7 +22,11 @@ def main():
 
         filedir = os.path.dirname(Npp.notepad.getCurrentFilename())
         cwd = os.getcwd()
-        os.chdir(filedir)
+
+	try:
+		os.chdir(filedir)
+	except:
+		pass
 
 	args = [s1kd_acronyms, "-M", path]
 
