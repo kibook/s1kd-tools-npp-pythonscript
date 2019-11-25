@@ -9,10 +9,10 @@
       <dmIdent>
         <dmCode modelIdentCode="S1KDNPP" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
         <language languageIsoCode="en" countryIsoCode="CA"/>
-        <issueInfo issueNumber="000" inWork="09"/>
+        <issueInfo issueNumber="000" inWork="10"/>
       </dmIdent>
       <dmAddressItems>
-        <issueDate year="2019" month="09" day="23"/>
+        <issueDate year="2019" month="11" day="25"/>
         <dmTitle>
           <techName>s1kd-tools PythonScript interface for Notepad++</techName>
           <infoName>README</infoName>
@@ -252,7 +252,7 @@
                     <para>
                       <emphasis>Text-to-reference</emphasis>
                     </para>
-                    <para>Generate the XML for references from the currently selected text.</para>
+                    <para>Generate the XML for references from the currently selected text. If no text is selected, transform all references in the current CSDB object.</para>
                   </listItem>
                   <listItem>
                     <para>

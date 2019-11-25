@@ -118,7 +118,8 @@ Functions
     -   **Text-to-reference**
 
         Generate the XML for references from the currently selected
-        text.
+        text. If no text is selected, transform all references in the
+        current CSDB object.
 
     -   **Update references**
 
