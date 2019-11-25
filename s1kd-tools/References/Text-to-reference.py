@@ -35,7 +35,7 @@ def main():
 
 	(out, err) = p.communicate(text)
 	e = p.wait()
-	if err == 0:
+	if e == 0:
 		if hasSelectedText:
 			Npp.editor.replaceSel(out)
 		else:
