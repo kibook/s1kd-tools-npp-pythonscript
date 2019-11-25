@@ -35,10 +35,12 @@ def main():
 
 	(out, err) = p.communicate(text)
 	e = p.wait()
-
-	if hasSelectedText:
-		Npp.editor.replaceSel(out)
+	if err == 0:
+		if hasSelectedText:
+			Npp.editor.replaceSel(out)
+		else:
+			Npp.editor.setText(out)
 	else:
-		Npp.editor.setText(out)
+		Npp.notepad.messageBox(err, "s1kd-ref")
 
 main()
