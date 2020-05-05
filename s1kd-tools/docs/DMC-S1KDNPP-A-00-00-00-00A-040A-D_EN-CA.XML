@@ -9,10 +9,10 @@
       <dmIdent>
         <dmCode modelIdentCode="S1KDNPP" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
         <language languageIsoCode="en" countryIsoCode="CA"/>
-        <issueInfo issueNumber="000" inWork="10"/>
+        <issueInfo issueNumber="000" inWork="11"/>
       </dmIdent>
       <dmAddressItems>
-        <issueDate year="2019" month="11" day="25"/>
+        <issueDate year="2020" month="05" day="05"/>
         <dmTitle>
           <techName>s1kd-tools PythonScript interface for Notepad++</techName>
           <infoName>README</infoName>
@@ -274,12 +274,6 @@
                       <emphasis>Add neutral metadata</emphasis>
                     </para>
                     <para>Add IETP neutral metadata to the CSDB object.</para>
-                  </listItem>
-                  <listItem>
-                    <para>
-                      <emphasis>Apply XSL transformation</emphasis>
-                    </para>
-                    <para>Apply an XSL transform script to the CSDB object.</para>
                   </listItem>
                   <listItem>
                     <para>

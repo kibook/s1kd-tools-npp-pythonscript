@@ -131,10 +131,6 @@ Functions
 
         Add IETP neutral metadata to the CSDB object.
 
-    -   **Apply XSL transformation**
-
-        Apply an XSL transform script to the CSDB object.
-
     -   **Remove neutral metadata**
 
         Remove IETP neutral metadata from the CSDB object.
