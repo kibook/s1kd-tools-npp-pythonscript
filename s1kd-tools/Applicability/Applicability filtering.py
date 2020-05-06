@@ -20,11 +20,13 @@ def main():
         config = ConfigParser.RawConfigParser()
         config.read(scriptdir + "\\settings.ini")
 
-        reduceOrSimplify = config.get("Filtering", "ReduceOrSimplify")
-        if reduceOrSimplify == "reduce":
+        mode = config.get("Filtering", "Mode")
+        if mode == "reduce":
             args.append("-a")
-        elif reduceOrSimplify == "simplify":
+        elif mode == "simplify":
             args.append("-A")
+        elif mode == "prune":
+            args.append("-9")
 
         if config.get("Filtering", "AddRequired") == "yes":
             args.append("-Z")
